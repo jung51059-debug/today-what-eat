@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8f1e8;
+  --foreground: #2d2a26;
+  --color-mint-bright: #8ab5a6;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-mint: #7ba898;
+  --color-mint-hover: #689986;
+  --color-mint-bright: #8ab5a6;
+  --color-mint-light: #eef5f1;
+  --color-mint-muted: #f2f8f6;
+  --color-cream: #f8f1e8;
+  --color-cream-muted: #f6efe6;
+  --color-ink: #2d2a26;
+  --color-ink-muted: #5c5752;
+  --color-ink-subtle: #8a847c;
+  --color-surface: #ffffff;
+  --color-border: #ebe4dc;
+  --font-sans: var(--font-noto-sans-kr), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .shadow-mint-soft {
+    box-shadow: 0 6px 14px rgba(120, 160, 140, 0.12);
+  }
+
+  .card-feature-hover {
+    border: 1px solid rgb(235 228 220 / 0.45);
+    box-shadow: none;
+    transition: all 0.25s ease;
+  }
+
+  .card-feature-hover:hover {
+    transform: translateY(-3px);
+    border-color: #a7c9b7;
+    box-shadow: 0 10px 24px rgb(0 0 0 / 0.06);
+  }
+
+  @media (hover: none) {
+    .card-feature-hover:hover {
+      transform: none;
+      border-color: rgb(235 228 220 / 0.45);
+      box-shadow: none;
+    }
+  }
+
+  .screenshot-card-hover {
+    box-shadow: 0 4px 18px rgb(0 0 0 / 0.045);
+    transition: all 0.25s ease;
+  }
+
+  .screenshot-card-hover:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgb(0 0 0 / 0.06);
+  }
+
+  @media (hover: none) {
+    .screenshot-card-hover:hover {
+      transform: none;
+      box-shadow: 0 4px 18px rgb(0 0 0 / 0.045);
+    }
+  }
+
+  .btn-mint-lift {
+    transition:
+      background-color 0.2s ease,
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .btn-mint-lift:hover {
+    transform: translateY(-1px);
+    background-color: var(--color-mint-bright);
+  }
+}
