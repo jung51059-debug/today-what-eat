@@ -1,30 +1,19 @@
 import Image from "next/image";
 
-const SCREENSHOTS = [
-  {
-    label: "상황 선택",
-    src: "/screenshot-1.png",
-    alt: "혼밥, 데이트, 회식 등 상황을 고르는 앱 화면",
-  },
-  {
-    label: "메뉴 추천",
-    src: "/screenshot-2.png",
-    alt: "오늘의 추천 메뉴 목록을 보여주는 앱 화면",
-  },
-  {
-    label: "근처 맛집",
-    src: "/screenshot-3.png",
-    alt: "근처 맛집 목록과 거리 필터를 보여주는 앱 화면",
-  },
-] as const;
-
 export function ScreenshotSection() {
   return (
     <section
       aria-labelledby="screenshots-heading"
-      className="bg-cream pb-16 pt-12 sm:pb-20 sm:pt-14"
+      className="relative overflow-hidden bg-cream pb-16 pt-12 sm:pb-20 sm:pt-14"
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      {/* 배경 장식 — 프로모션 쇼케이스 분위기 */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+        <div className="absolute -left-20 top-1/4 h-72 w-72 rounded-full bg-mint/6 blur-3xl" />
+        <div className="absolute -right-16 bottom-0 h-80 w-80 rounded-full bg-[#ebe3d8]/70 blur-3xl" />
+        <div className="absolute left-1/2 top-8 h-48 w-[480px] -translate-x-1/2 rounded-full bg-white/40 blur-3xl" />
+      </div>
+
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2
             id="screenshots-heading"
@@ -38,33 +27,20 @@ export function ScreenshotSection() {
           </p>
         </div>
 
-        <ul
-          className="mt-12 flex gap-5 overflow-x-auto pb-4 sm:grid sm:grid-cols-3 sm:gap-7 sm:overflow-visible sm:pb-0 lg:gap-10"
-          aria-label="앱 스크린샷 목록"
-        >
-          {SCREENSHOTS.map((shot, index) => (
-            <li
-              key={shot.label}
-              className="min-w-[260px] flex-1 sm:min-w-0"
-            >
-              <figure className="screenshot-card-hover overflow-hidden rounded-3xl border border-border/40 bg-surface">
-                <div className="relative aspect-[9/19] w-full bg-cream">
-                  <Image
-                    src={shot.src}
-                    alt={shot.alt}
-                    fill
-                    sizes="(max-width: 640px) 280px, (max-width: 1024px) 32vw, 380px"
-                    className="object-cover object-top"
-                    priority={index === 0}
-                  />
-                </div>
-                <figcaption className="border-t border-border/40 bg-surface px-4 py-3 text-center text-sm font-semibold text-ink/75">
-                  {shot.label}
-                </figcaption>
-              </figure>
-            </li>
-          ))}
-        </ul>
+        {/* 업로드한 프로모션 이미지 쇼케이스 */}
+        <figure className="mx-auto mt-14 max-w-5xl sm:mt-16">
+          <div className="screenshot-card-hover overflow-hidden rounded-2xl shadow-[0_8px_32px_rgb(0_0_0/0.06)]">
+            <Image
+              src="/app-showcase.jpg"
+              alt="오늘 뭐 먹지? 앱 주요 화면 — 상황 선택, 메뉴 추천, 근처 맛집"
+              width={1024}
+              height={633}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1024px"
+              className="h-auto w-full"
+              priority
+            />
+          </div>
+        </figure>
       </div>
     </section>
   );
