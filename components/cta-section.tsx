@@ -16,7 +16,7 @@ export function CtaSection() {
           >
             오늘 뭐 먹을지, 지금 바로 시작해 보세요
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-ink-muted sm:text-lg">
+          <p className="mx-auto mt-4 max-w-[420px] text-base leading-relaxed text-ink-muted sm:text-lg">
             {APP_NAME}를 스토어에서 내려받고, 상황에 맞는 메뉴와 근처 맛집을
             만나 보세요.
           </p>
