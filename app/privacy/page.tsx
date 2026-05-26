@@ -283,16 +283,19 @@ export default function PrivacyPage() {
 
         <section id="rights" className="scroll-mt-24">
           <h2 className="mb-3 text-xl font-bold text-ink">9. 이용자의 권리</h2>
-          <p>이용자는 다음과 같은 방법으로 개인정보 관련 권리를 행사할 수 있습니다.</p>
-          <ul className="mt-3 list-disc space-y-2 pl-5">
-            <li>앱 내 기능을 통한 즐겨찾기·로컬 기록 삭제</li>
-            <li>OS 설정에서 위치 권한 철회</li>
-            <li>앱 삭제를 통한 기기 내 로컬 데이터 삭제</li>
+          <p className="mb-4">
+            이용자는 아래와 같은 방법으로 개인정보 관련 권리를 행사할 수
+            있습니다.
+          </p>
+          <ul className="list-disc space-y-2 pl-5">
+            <li>앱 내 기능을 통한 즐겨찾기 및 최근 기록 삭제</li>
+            <li>Android 또는 iOS 설정에서 위치 권한 변경 및 철회</li>
+            <li>앱 삭제를 통한 기기 내 저장 데이터 삭제</li>
             <li>
-              광고 맞춤 설정: Android/iOS 및 Google 광고 설정에서 조정 가능
+              Android/iOS 및 Google 광고 설정을 통한 맞춤형 광고 설정 변경
             </li>
             <li>
-              기타 문의:{" "}
+              개인정보 관련 문의:{" "}
               <a
                 href={`mailto:${CONTACT_EMAIL}`}
                 className="text-mint hover:text-mint-hover"
