@@ -30,7 +30,7 @@ const sections = [
 
 export default function PrivacyPage() {
   return (
-    <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-14">
+    <main className="privacy-page mx-auto max-w-[832px] px-4 py-10 sm:px-6 sm:py-14">
       <nav aria-label="페이지 이동" className="mb-6">
         <Link
           href="/"
@@ -68,7 +68,7 @@ export default function PrivacyPage() {
             <li key={section.id}>
               <a
                 href={`#${section.id}`}
-                className="text-mint transition-colors hover:text-mint-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mint"
+                className="privacy-toc-link transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mint"
               >
                 {section.title}
               </a>
@@ -79,7 +79,7 @@ export default function PrivacyPage() {
 
       <article className="privacy-article space-y-14 text-base text-ink-muted sm:space-y-16">
         <section id="intro" className="scroll-mt-24">
-          <h2 className="mb-3 text-xl font-bold text-ink">1. 총칙</h2>
+          <h2 className="privacy-section-title mb-3 font-bold text-ink">1. 총칙</h2>
           <p>
             「{APP_NAME}」은 별도의 회원가입이나 로그인 없이 이용할 수 있는
             모바일 앱입니다. 앱은 메뉴 추천, 근처 맛집 검색, 즐겨찾기 등의
@@ -93,7 +93,7 @@ export default function PrivacyPage() {
         </section>
 
         <section id="operator" className="scroll-mt-24">
-          <h2 className="mb-3 text-xl font-bold text-ink">2. 운영자 정보</h2>
+          <h2 className="privacy-section-title mb-3 font-bold text-ink">2. 운영자 정보</h2>
           <dl className="overflow-hidden rounded-xl border border-border bg-cream-muted">
             <div className="grid gap-1 border-b border-border px-4 py-3 sm:grid-cols-[140px_1fr]">
               <dt className="font-medium text-ink">회사명/운영자명</dt>
@@ -122,7 +122,7 @@ export default function PrivacyPage() {
         </section>
 
         <section id="collection" className="scroll-mt-24">
-          <h2 className="mb-3 text-xl font-bold text-ink">
+          <h2 className="privacy-section-title mb-3 font-bold text-ink">
             3. 수집하는 개인정보 항목
           </h2>
           <p className="mb-4">
@@ -163,7 +163,7 @@ export default function PrivacyPage() {
         </section>
 
         <section id="purpose" className="scroll-mt-24">
-          <h2 className="mb-3 text-xl font-bold text-ink">
+          <h2 className="privacy-section-title mb-3 font-bold text-ink">
             4. 개인정보의 처리 목적
           </h2>
           <p className="mb-4">
@@ -183,7 +183,7 @@ export default function PrivacyPage() {
         </section>
 
         <section id="local-storage" className="scroll-mt-24">
-          <h2 className="mb-3 text-xl font-bold text-ink">
+          <h2 className="privacy-section-title mb-3 font-bold text-ink">
             5. 기기 내 저장 정보
           </h2>
           <p>
@@ -203,7 +203,7 @@ export default function PrivacyPage() {
         </section>
 
         <section id="location" className="scroll-mt-24">
-          <h2 className="mb-3 text-xl font-bold text-ink">6. 위치 정보</h2>
+          <h2 className="privacy-section-title mb-3 font-bold text-ink">6. 위치 정보</h2>
           <p>
             근처 맛집 검색 기능은 이용자가 위치 권한을 허용한 경우에만
             이용할 수 있습니다. 위치 권한을 허용하지 않을 경우 일부 기능
@@ -216,7 +216,7 @@ export default function PrivacyPage() {
         </section>
 
         <section id="third-party" className="scroll-mt-24">
-          <h2 className="mb-3 text-xl font-bold text-ink">
+          <h2 className="privacy-section-title mb-3 font-bold text-ink">
             7. 제3자 제공 및 외부 서비스 연동
           </h2>
           <p className="mb-4">
@@ -249,7 +249,7 @@ export default function PrivacyPage() {
         </section>
 
         <section id="retention" className="scroll-mt-24">
-          <h2 className="mb-3 text-xl font-bold text-ink">
+          <h2 className="privacy-section-title mb-3 font-bold text-ink">
             8. 보유 및 이용 기간
           </h2>
           <p className="mb-4">
@@ -281,7 +281,7 @@ export default function PrivacyPage() {
         </section>
 
         <section id="rights" className="scroll-mt-24">
-          <h2 className="mb-3 text-xl font-bold text-ink">9. 이용자의 권리</h2>
+          <h2 className="privacy-section-title mb-3 font-bold text-ink">9. 이용자의 권리</h2>
           <p className="mb-4">
             이용자는 아래와 같은 방법으로 개인정보 관련 권리를 행사할 수
             있습니다.
@@ -306,7 +306,7 @@ export default function PrivacyPage() {
         </section>
 
         <section id="security" className="scroll-mt-24">
-          <h2 className="mb-3 text-xl font-bold text-ink">
+          <h2 className="privacy-section-title mb-3 font-bold text-ink">
             10. 안전성 확보 조치
           </h2>
           <p>
@@ -321,7 +321,7 @@ export default function PrivacyPage() {
         </section>
 
         <section id="children" className="scroll-mt-24">
-          <h2 className="mb-3 text-xl font-bold text-ink">
+          <h2 className="privacy-section-title mb-3 font-bold text-ink">
             11. 아동의 개인정보
           </h2>
           <p>
@@ -335,7 +335,7 @@ export default function PrivacyPage() {
         </section>
 
         <section id="changes" className="scroll-mt-24">
-          <h2 className="mb-3 text-xl font-bold text-ink">12. 방침 변경</h2>
+          <h2 className="privacy-section-title mb-3 font-bold text-ink">12. 방침 변경</h2>
           <p>
             본 방침은 관련 법령 및 서비스 내용의 변경에 따라 수정될 수
             있으며, 변경 사항은 앱 또는 웹페이지를 통해 안내합니다.
@@ -347,7 +347,7 @@ export default function PrivacyPage() {
         </section>
 
         <section id="contact" className="scroll-mt-24">
-          <h2 className="mb-3 text-xl font-bold text-ink">13. 문의처</h2>
+          <h2 className="privacy-section-title mb-3 font-bold text-ink">13. 문의처</h2>
           <p>
             개인정보 처리와 관련한 문의 및 요청 사항은 아래 이메일로
             연락해 주세요.
