@@ -35,7 +35,12 @@ body {
   }
 
   .shadow-mint-soft {
-    box-shadow: 0 6px 14px rgba(120, 160, 140, 0.12);
+    box-shadow: 0 8px 18px rgba(120, 170, 150, 0.18);
+  }
+
+  .cta-card {
+    background: linear-gradient(180deg, #f7f4ef 0%, #f5f1eb 100%);
+    box-shadow: 0 10px 30px rgba(180, 150, 120, 0.06);
   }
 
   .card-feature-hover {
