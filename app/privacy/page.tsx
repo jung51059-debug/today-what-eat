@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { APP_NAME, CONTACT_EMAIL } from "@/lib/site";
+import { APP_NAME, CONTACT_EMAIL, OPERATOR_ADDRESS, OPERATOR_NAME, OPERATOR_REPRESENTATIVE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "개인정보처리방침",
@@ -93,22 +93,18 @@ export default function PrivacyPage() {
 
         <section id="operator" className="scroll-mt-24">
           <h2 className="mb-3 text-xl font-bold text-ink">2. 운영자 정보</h2>
-          <p className="mb-4">
-            아래 항목은 실제 배포 전 운영자가 반드시 기입해야 하는
-            플레이스홀더입니다.
-          </p>
           <dl className="overflow-hidden rounded-xl border border-border bg-cream-muted">
             <div className="grid gap-1 border-b border-border px-4 py-3 sm:grid-cols-[140px_1fr]">
               <dt className="font-medium text-ink">회사명/운영자명</dt>
-              <dd>[회사명 또는 운영자명을 입력하세요]</dd>
+              <dd>{OPERATOR_NAME}</dd>
             </div>
             <div className="grid gap-1 border-b border-border px-4 py-3 sm:grid-cols-[140px_1fr]">
               <dt className="font-medium text-ink">대표자</dt>
-              <dd>[대표자명을 입력하세요]</dd>
+              <dd>{OPERATOR_REPRESENTATIVE}</dd>
             </div>
             <div className="grid gap-1 border-b border-border px-4 py-3 sm:grid-cols-[140px_1fr]">
               <dt className="font-medium text-ink">주소</dt>
-              <dd>[사업장 또는 연락 가능 주소를 입력하세요]</dd>
+              <dd>{OPERATOR_ADDRESS}</dd>
             </div>
             <div className="grid gap-1 px-4 py-3 sm:grid-cols-[140px_1fr]">
               <dt className="font-medium text-ink">이메일</dt>
@@ -118,8 +114,7 @@ export default function PrivacyPage() {
                   className="text-mint hover:text-mint-hover"
                 >
                   {CONTACT_EMAIL}
-                </a>{" "}
-                (배포 전 실제 연락처로 교체)
+                </a>
               </dd>
             </div>
           </dl>

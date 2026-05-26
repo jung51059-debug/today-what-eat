@@ -24,8 +24,13 @@ export const IOS_STORE_URL = "https://apps.apple.com/app/idIOS_STORE_URL";
 /** iOS 출시 전에는 false — App Store 버튼 숨김 */
 export const IOS_STORE_ENABLED = false;
 
-/** 문의 이메일 (배포 전 실제 주소로 교체) */
-export const CONTACT_EMAIL = "CONTACT_EMAIL@example.com";
+/** 문의·개인정보 담당 이메일 */
+export const CONTACT_EMAIL = "jung51059@gmail.com";
+
+/** 개인정보처리방침 운영자 정보 */
+export const OPERATOR_NAME = "정현준";
+export const OPERATOR_REPRESENTATIVE = "정현준";
+export const OPERATOR_ADDRESS = "대한민국";
 
 export const COPYRIGHT_YEAR = new Date().getFullYear();
 
