@@ -75,17 +75,17 @@ body {
     }
   }
 
-  /* ── 앱 미리보기 3분할 쇼케이스 ── */
+  /* ── 앱 미리보기 iPhone 쇼케이스 ── */
   .showcase-frame {
     border-radius: 1.25rem;
     background: var(--color-cream);
-    padding: 1.5rem 1rem 1.25rem;
+    padding: 1.5rem 0.75rem 1.25rem;
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
   }
 
   @media (min-width: 640px) {
     .showcase-frame {
-      padding: 2rem 1.5rem 1.5rem;
+      padding: 2rem 1.25rem 1.5rem;
       border-radius: 1.5rem;
     }
   }
@@ -94,46 +94,154 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    gap: 0;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
   }
 
-  .showcase-slice {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
+  @media (min-width: 640px) {
+    .showcase-row {
+      gap: 1.5rem;
+      overflow-x: visible;
+      padding-bottom: 0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .showcase-row {
+      gap: 2.5rem;
+    }
+  }
+
+  .showcase-row > li {
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    list-style: none;
     transform-origin: bottom center;
-    transition: transform 0.3s ease;
   }
 
-  .showcase-slice-side {
+  .showcase-item-side {
     transform: scale(0.92) translateY(0.75rem);
   }
 
-  .showcase-slice-center {
+  .showcase-item-center {
     z-index: 1;
     transform: scale(1) translateY(-0.5rem);
   }
 
   @media (min-width: 640px) {
-    .showcase-slice-side {
+    .showcase-item-side {
       transform: scale(0.92) translateY(1rem);
     }
 
-    .showcase-slice-center {
+    .showcase-item-center {
       transform: scale(1) translateY(-0.75rem);
     }
   }
 
-  .showcase-slice-viewport {
-    position: relative;
-    overflow: hidden;
-    aspect-ratio: 341 / 633;
+  .phone-mockup-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
   }
 
-  .showcase-slice-image {
-    display: block;
-    width: 300%;
-    max-width: none;
-    height: auto;
+  .phone-mockup-device {
+    filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.08));
+  }
+
+  .phone-mockup-bezel {
+    position: relative;
+    border-radius: 2.25rem;
+    padding: 0.5rem;
+    background: linear-gradient(145deg, #3a3a3c 0%, #1c1c1e 55%, #2c2c2e 100%);
+    box-shadow:
+      inset 0 0 0 1px rgb(255 255 255 / 0.12),
+      inset 0 1px 0 rgb(255 255 255 / 0.08);
+  }
+
+  @media (min-width: 640px) {
+    .phone-mockup-bezel {
+      padding: 0.625rem;
+      border-radius: 2.75rem;
+    }
+  }
+
+  .phone-mockup-island {
+    position: absolute;
+    left: 50%;
+    top: 0.875rem;
+    z-index: 10;
+    height: 1.125rem;
+    width: 4.5rem;
+    transform: translateX(-50%);
+    border-radius: 9999px;
+    background: #0a0a0a;
+  }
+
+  @media (min-width: 640px) {
+    .phone-mockup-island {
+      top: 1rem;
+      height: 1.25rem;
+      width: 5rem;
+    }
+  }
+
+  .phone-mockup-display {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.75rem;
+    background: var(--color-cream);
+    aspect-ratio: 9 / 19.5;
+    width: 9.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .phone-mockup-display {
+      width: 11.5rem;
+      border-radius: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .phone-mockup-display {
+      width: 12.5rem;
+    }
+  }
+
+  .showcase-item-center .phone-mockup-display {
+    width: 10.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .showcase-item-center .phone-mockup-display {
+      width: 13rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .showcase-item-center .phone-mockup-display {
+      width: 14rem;
+    }
+  }
+
+  .phone-mockup-screen {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .phone-mockup-caption {
+    margin-top: 0.875rem;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: rgb(45 42 38 / 0.7);
   }
 
   .btn-mint-lift {
