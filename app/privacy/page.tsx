@@ -82,13 +82,14 @@ export default function PrivacyPage() {
         <section id="intro" className="scroll-mt-24">
           <h2 className="mb-3 text-xl font-bold text-ink">1. 총칙</h2>
           <p>
-            「{APP_NAME}」은 별도의 회원가입·로그인 절차 없이 이용할 수 있는
+            「{APP_NAME}」은 별도의 회원가입이나 로그인 없이 이용할 수 있는
             모바일 앱입니다. 앱은 메뉴 추천, 근처 맛집 검색, 즐겨찾기 등의
-            기능을 제공하며, 이 과정에서 최소한의 정보를 처리할 수 있습니다.
+            기능을 제공하며, 서비스 제공에 필요한 범위 내에서 개인정보를
+            처리할 수 있습니다.
           </p>
           <p className="mt-3">
             운영자는 「개인정보 보호법」 등 관련 법령을 준수하며, 이용자의
-            개인정보를 보호하기 위해 본 방침을 수립·공개합니다.
+            개인정보를 안전하게 보호하기 위해 노력합니다.
           </p>
         </section>
 
