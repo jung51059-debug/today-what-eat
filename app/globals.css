@@ -88,8 +88,8 @@ body {
       rgb(252 249 245 / 0.72) 0%,
       rgb(248 241 232 / 0.78) 100%
     );
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     padding: 1.5rem 0.75rem 1.5rem;
     box-shadow:
       0 24px 56px rgba(180, 150, 120, 0.1),
@@ -137,7 +137,7 @@ body {
   }
 
   .showcase-item-side .phone-mockup-screen {
-    opacity: 0.95;
+    opacity: 0.94;
     transition: opacity 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 
@@ -212,8 +212,8 @@ body {
   .showcase-item-center .phone-mockup-shell {
     border-color: rgba(190, 170, 150, 0.24);
     box-shadow:
-      0 30px 62px rgba(180, 150, 120, 0.17),
-      0 12px 26px rgba(180, 150, 120, 0.1);
+      0 18px 40px rgba(180, 150, 120, 0.14),
+      0 8px 20px rgba(180, 150, 120, 0.08);
   }
 
   @media (min-width: 640px) {
@@ -299,7 +299,7 @@ body {
     min-height: 1.75rem;
     padding: 0.4rem 0.875rem 0;
     pointer-events: none;
-    opacity: 0.42;
+    opacity: 0.38;
   }
 
   @media (min-width: 640px) {
