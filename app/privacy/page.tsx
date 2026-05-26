@@ -253,15 +253,30 @@ export default function PrivacyPage() {
           <h2 className="mb-3 text-xl font-bold text-ink">
             8. 보유 및 이용 기간
           </h2>
-          <ul className="list-disc space-y-2 pl-5">
+          <p className="mb-4">
+            앱은 개인정보를 아래와 같은 기준으로 보유 및 이용합니다.
+          </p>
+          <ul className="space-y-4">
             <li>
-              기기 내 저장 정보: 이용자가 삭제하거나 앱을 삭제할 때까지
+              <strong className="text-ink">기기 내 저장 정보</strong>
+              <p className="mt-1">
+                이용자가 직접 삭제하거나 앱을 삭제할 때까지 이용자 기기
+                내에 저장될 수 있습니다.
+              </p>
             </li>
             <li>
-              위치 정보: 검색 요청 처리에 필요한 최소한의 기간 동안만 이용
+              <strong className="text-ink">위치 정보</strong>
+              <p className="mt-1">
+                근처 맛집 검색 요청 처리에 필요한 최소한의 범위에서만
+                일시적으로 이용됩니다.
+              </p>
             </li>
             <li>
-              제3자(카카오, Google 등): 각 서비스 제공자의 정책에 따름
+              <strong className="text-ink">제3자 서비스 정보</strong>
+              <p className="mt-1">
+                카카오, Google 등 외부 서비스에서 처리되는 정보는 각
+                서비스 제공자의 정책에 따릅니다.
+              </p>
             </li>
           </ul>
         </section>
