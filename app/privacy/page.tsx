@@ -52,7 +52,7 @@ export default function PrivacyPage() {
         </p>
         <p className="mt-2 text-sm text-ink-subtle">
           시행일:{" "}
-          <strong className="font-medium text-ink">[시행일을 입력하세요]</strong>
+          <strong className="font-medium text-ink">2026년 5월 26일</strong>
         </p>
       </header>
 
