@@ -127,28 +127,38 @@ export default function PrivacyPage() {
             3. 수집하는 개인정보 항목
           </h2>
           <p className="mb-4">
-            앱은 회원가입을 요구하지 않으며, 서버에 이용자를 식별하는 계정
-            정보를 저장하지 않습니다. 다만 기능 제공을 위해 아래 정보가 처리될
-            수 있습니다.
+            앱은 회원가입을 요구하지 않으며, 이용자를 식별할 수 있는 계정
+            정보를 서버에 저장하지 않습니다. 다만 서비스 제공을 위해 아래와
+            같은 정보가 처리될 수 있습니다.
           </p>
-          <ul className="list-disc space-y-2 pl-5">
+          <ul className="space-y-4">
             <li>
-              <strong className="text-ink">위치 정보(선택)</strong>: 근처
-              식당 검색 시, 이용자가 OS에서 위치 권한을 허용한 경우에만
-              사용합니다.
+              <strong className="text-ink">위치 정보(선택)</strong>
+              <p className="mt-1">
+                근처 맛집 검색 기능 이용 시, 이용자가 위치 권한을 허용한
+                경우에만 사용됩니다.
+              </p>
             </li>
             <li>
-              <strong className="text-ink">기기 내 저장 정보</strong>:
-              즐겨찾기, 최근 메뉴 이름, 검색 필터 설정 등(SharedPreferences
-              수준의 로컬 저장).
+              <strong className="text-ink">기기 내 저장 정보</strong>
+              <p className="mt-1">
+                즐겨찾기, 최근 메뉴 기록, 검색 필터 설정 등의 정보가 이용자
+                기기 내에 저장될 수 있습니다.
+              </p>
             </li>
             <li>
-              <strong className="text-ink">광고 식별자</strong>: Google AdMob
-              광고 제공 시 기기 광고 ID 등이 수집·이용될 수 있습니다.
+              <strong className="text-ink">광고 식별자</strong>
+              <p className="mt-1">
+                Google AdMob 광고 제공 과정에서 광고 식별자(Advertising ID)
+                및 기기 정보 등이 수집·이용될 수 있습니다.
+              </p>
             </li>
             <li>
-              <strong className="text-ink">앱 이용 기록(비식별)</strong>: 오류
-              분석·서비스 개선을 위한 기술적 로그(해당 기능 도입 시).
+              <strong className="text-ink">앱 이용 기록(비식별 정보)</strong>
+              <p className="mt-1">
+                서비스 개선 및 오류 분석을 위한 비식별 형태의 기술적 정보가
+                수집될 수 있습니다.
+              </p>
             </li>
           </ul>
         </section>
