@@ -15,7 +15,7 @@ export function SiteFooter() {
                 href="#features"
                 className="text-sm font-medium text-ink-muted transition-colors hover:text-mint focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mint"
               >
-                기능
+                앱 기능
               </a>
             </li>
             <li>
