@@ -44,21 +44,21 @@ export default function PrivacyPage() {
         <h1 className="text-3xl font-bold text-ink sm:text-4xl">
           개인정보처리방침
         </h1>
-        <p className="mt-4 text-base leading-[1.85] text-ink-muted">
+        <p className="privacy-intro mt-4 text-base leading-[1.85] text-ink-muted">
           「{APP_NAME}」(이하 &ldquo;앱&rdquo;)은 이용자의 개인정보를 중요하게
           생각하며, 「개인정보 보호법」 등 관련 법령을 준수합니다. 본
           개인정보처리방침은 앱 이용 과정에서 처리되는 개인정보와 그 이용
           목적, 보관 방법 등을 안내합니다.
         </p>
-        <p className="mt-2 text-sm text-ink-subtle">
+        <p className="privacy-effective-date mt-3 text-sm">
           시행일:{" "}
-          <strong className="font-medium text-ink">2026년 5월 26일</strong>
+          <strong className="font-semibold text-ink">2026년 5월 26일</strong>
         </p>
       </header>
 
       <nav
         aria-label="목차"
-        className="mb-12 rounded-2xl border border-border bg-surface p-5 sm:mb-14 sm:p-6"
+        className="privacy-toc-card mb-12 rounded-2xl bg-surface p-5 sm:mb-14 sm:p-6"
       >
         <h2 className="text-sm font-semibold uppercase tracking-wide text-ink-muted">
           목차
