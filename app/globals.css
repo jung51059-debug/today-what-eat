@@ -90,7 +90,7 @@ body {
     );
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
-    padding: 1.5rem 0.75rem 0;
+    padding: 1.5rem 0.75rem 1.5rem;
     box-shadow:
       0 24px 56px rgba(180, 150, 120, 0.1),
       0 8px 20px rgba(180, 150, 120, 0.05);
@@ -98,7 +98,7 @@ body {
 
   @media (min-width: 640px) {
     .showcase-frame {
-      padding: 2rem 1.25rem 0.25rem;
+      padding: 2rem 1.25rem 3rem;
       border-radius: 1.5rem;
     }
   }
@@ -371,7 +371,7 @@ body {
   }
 
   .phone-mockup-caption {
-    margin-top: 1.25rem;
+    margin-top: 0.5rem;
     font-size: 0.8125rem;
     font-weight: 500;
     letter-spacing: 0.02em;
