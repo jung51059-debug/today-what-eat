@@ -167,12 +167,19 @@ export default function PrivacyPage() {
           <h2 className="mb-3 text-xl font-bold text-ink">
             4. 개인정보의 처리 목적
           </h2>
+          <p className="mb-4">
+            앱은 다음과 같은 목적으로 개인정보를 처리할 수 있습니다.
+          </p>
           <ul className="list-disc space-y-2 pl-5">
             <li>상황별 메뉴 추천 및 앱 핵심 기능 제공</li>
-            <li>이용자 위치 기반 근처 식당 검색(위치 권한 허용 시)</li>
-            <li>즐겨찾기·최근 기록 등 개인화된 이용 경험 제공(기기 내 저장)</li>
-            <li>광고 표시 및 광고 성과 측정(Google AdMob)</li>
-            <li>외부 앱·웹(지도, 전화, 스토어 등) 연결(url_launcher)</li>
+            <li>
+              이용자 위치 기반의 근처 맛집 검색 기능 제공(위치 권한 허용 시)
+            </li>
+            <li>
+              즐겨찾기 및 최근 기록 저장 등 개인화된 이용 경험 제공
+            </li>
+            <li>광고 제공 및 광고 성과 측정(Google AdMob)</li>
+            <li>지도, 전화, 앱 스토어 등 외부 서비스 연결 기능 제공</li>
           </ul>
         </section>
 
