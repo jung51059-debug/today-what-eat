@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { MockupStatusBar } from "@/components/mockup-status-bar";
 
 type PhoneMockupProps = {
   src: string;
@@ -26,6 +27,9 @@ export function PhoneMockup({
             className="phone-mockup-screen"
             priority={priority}
           />
+          {/* 기존 Android 상태바를 덮고 출시용 mockup 상태바로 교체 */}
+          <div className="phone-mockup-status-cover" aria-hidden="true" />
+          <MockupStatusBar />
         </div>
       </div>
       <figcaption className="phone-mockup-caption">{label}</figcaption>
