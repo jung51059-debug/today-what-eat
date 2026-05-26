@@ -28,9 +28,9 @@ export function ScreenshotSection() {
       className="relative overflow-hidden bg-cream pb-16 pt-12 sm:pb-20 sm:pt-14"
     >
       <div aria-hidden="true" className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-20 top-1/4 h-72 w-72 rounded-full bg-mint/6 blur-3xl" />
-        <div className="absolute -right-16 bottom-0 h-80 w-80 rounded-full bg-[#ebe3d8]/70 blur-3xl" />
-        <div className="absolute left-1/2 top-8 h-48 w-[480px] -translate-x-1/2 rounded-full bg-white/40 blur-3xl" />
+        <div className="absolute -left-24 top-1/4 h-80 w-80 rounded-full bg-mint/3 blur-[88px]" />
+        <div className="absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-[#ebe3d8]/30 blur-[96px]" />
+        <div className="absolute left-1/2 top-6 h-56 w-[520px] -translate-x-1/2 rounded-full bg-white/15 blur-[80px]" />
       </div>
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
