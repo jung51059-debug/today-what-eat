@@ -338,9 +338,12 @@ export default function PrivacyPage() {
         <section id="changes" className="scroll-mt-24">
           <h2 className="mb-3 text-xl font-bold text-ink">12. 방침 변경</h2>
           <p>
-            본 방침은 법령·서비스 변경에 따라 수정될 수 있으며, 변경 시 앱
-            또는 본 웹페이지를 통해 공지합니다. 중요한 변경의 경우 시행일 7일
-            전(이용자에게 불리한 변경은 30일 전)부터 공지할 수 있습니다.
+            본 방침은 관련 법령 및 서비스 내용의 변경에 따라 수정될 수
+            있으며, 변경 사항은 앱 또는 웹페이지를 통해 안내합니다.
+          </p>
+          <p className="mt-3">
+            중요한 변경 사항이 있는 경우 시행일 최소 7일 전부터 공지하며,
+            이용자에게 불리한 변경의 경우 최소 30일 전에 안내합니다.
           </p>
         </section>
 
