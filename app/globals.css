@@ -76,16 +76,20 @@ body {
   }
 
   /* ── 앱 미리보기 iPhone 쇼케이스 ── */
+  .showcase-intro {
+    margin-bottom: -8px;
+  }
+
   .showcase-frame {
     border-radius: 1.25rem;
     background: var(--color-cream);
-    padding: 1.5rem 0.75rem 1.25rem;
+    padding: 1.5rem 0.75rem 0;
     box-shadow: 0 20px 52px rgba(0, 0, 0, 0.075);
   }
 
   @media (min-width: 640px) {
     .showcase-frame {
-      padding: 2rem 1.25rem 1.5rem;
+      padding: 2rem 1.25rem 0.25rem;
       border-radius: 1.5rem;
     }
   }
@@ -150,6 +154,10 @@ body {
 
   .phone-mockup-device {
     filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.08));
+  }
+
+  .showcase-item-center .phone-mockup-device {
+    filter: drop-shadow(0 20px 44px rgba(0, 0, 0, 0.1));
   }
 
   .phone-mockup-bezel {
@@ -241,7 +249,7 @@ body {
     font-size: 0.8125rem;
     font-weight: 500;
     letter-spacing: 0.02em;
-    opacity: 0.7;
+    opacity: 0.65;
     color: var(--color-ink);
   }
 

@@ -34,7 +34,7 @@ export function ScreenshotSection() {
       </div>
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="showcase-intro mx-auto max-w-2xl text-center">
           <h2
             id="screenshots-heading"
             className="text-[19px] font-bold text-ink sm:text-[22px]"
