@@ -350,8 +350,8 @@ export default function PrivacyPage() {
         <section id="contact" className="scroll-mt-24">
           <h2 className="mb-3 text-xl font-bold text-ink">13. 문의처</h2>
           <p>
-            개인정보 처리와 관련한 문의·불만·피해 구제는 아래로 연락해
-            주세요.
+            개인정보 처리와 관련한 문의 및 요청 사항은 아래 이메일로
+            연락해 주세요.
           </p>
           <p className="mt-3">
             이메일:{" "}
