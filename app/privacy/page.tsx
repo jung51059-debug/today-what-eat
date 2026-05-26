@@ -206,13 +206,13 @@ export default function PrivacyPage() {
         <section id="location" className="scroll-mt-24">
           <h2 className="mb-3 text-xl font-bold text-ink">6. 위치 정보</h2>
           <p>
-            근처 맛집 검색 기능은 이용자가 OS 설정에서 위치 권한을 허용한
-            경우에만 동작합니다. 위치 정보를 거부하면 해당 기능이 제한되거나
-            대체 방식(예: 수동 지역 선택)으로 제공될 수 있습니다.
+            근처 맛집 검색 기능은 이용자가 위치 권한을 허용한 경우에만
+            이용할 수 있습니다. 위치 권한을 허용하지 않을 경우 일부 기능
+            이용이 제한될 수 있습니다.
           </p>
           <p className="mt-3">
-            위치 권한은 Android/iOS 설정 &gt; 앱 &gt; 「{APP_NAME}」에서
-            언제든지 철회할 수 있습니다.
+            이용자는 Android 또는 iOS 설정에서 언제든지 위치 권한을
+            변경하거나 철회할 수 있습니다.
           </p>
         </section>
 
