@@ -46,9 +46,10 @@ export default function PrivacyPage() {
           개인정보처리방침
         </h1>
         <p className="mt-4 text-base leading-relaxed text-ink-muted">
-          본 방침은 「{APP_NAME}」 모바일 앱(이하 &ldquo;앱&rdquo;)이 이용자의
-          개인정보를 어떻게 처리하는지 설명합니다. 본 문서는 초안이며, 실제
-          서비스 운영 전 관련 법령에 따른 검토·보완이 필요합니다.
+          「{APP_NAME}」(이하 &ldquo;앱&rdquo;)은 이용자의 개인정보를 중요하게
+          생각하며, 「개인정보 보호법」 등 관련 법령을 준수합니다. 본
+          개인정보처리방침은 앱 이용 과정에서 처리되는 개인정보와 그 이용
+          목적, 보관 방법 등을 안내합니다.
         </p>
         <p className="mt-2 text-sm text-ink-subtle">
           시행일:{" "}
