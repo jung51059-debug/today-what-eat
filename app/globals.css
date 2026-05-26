@@ -77,7 +77,7 @@ body {
 
   /* ── 앱 미리보기 브랜드 쇼케이스 ── */
   .showcase-intro {
-    margin-bottom: -8px;
+    margin-bottom: -6px;
   }
 
   .showcase-frame {
@@ -107,7 +107,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    gap: 0.75rem;
+    gap: calc(0.75rem + 7px);
     overflow-x: auto;
     padding-bottom: 0.25rem;
     scroll-snap-type: x mandatory;
@@ -116,7 +116,7 @@ body {
 
   @media (min-width: 640px) {
     .showcase-row {
-      gap: 1.75rem;
+      gap: calc(1.75rem + 7px);
       overflow-x: visible;
       padding-bottom: 0;
     }
@@ -124,7 +124,7 @@ body {
 
   @media (min-width: 1024px) {
     .showcase-row {
-      gap: 3rem;
+      gap: calc(3rem + 8px);
     }
   }
 
@@ -212,7 +212,7 @@ body {
   .showcase-item-center .phone-mockup-shell {
     border-color: rgba(190, 170, 150, 0.24);
     box-shadow:
-      0 18px 40px rgba(180, 150, 120, 0.14),
+      0 18px 42px rgba(180, 150, 120, 0.14),
       0 8px 20px rgba(180, 150, 120, 0.08);
   }
 
