@@ -19,7 +19,7 @@ const sections = [
   { id: "purpose", title: "4. 개인정보의 처리 목적" },
   { id: "local-storage", title: "5. 기기 내 저장 정보" },
   { id: "location", title: "6. 위치 정보" },
-  { id: "third-party", title: "7. 제3자 제공 및 외부 연동" },
+  { id: "third-party", title: "7. 제3자 제공 및 외부 서비스 연동" },
   { id: "retention", title: "8. 보유 및 이용 기간" },
   { id: "rights", title: "9. 이용자의 권리" },
   { id: "security", title: "10. 안전성 확보 조치" },
@@ -218,35 +218,35 @@ export default function PrivacyPage() {
 
         <section id="third-party" className="scroll-mt-24">
           <h2 className="mb-3 text-xl font-bold text-ink">
-            7. 제3자 제공 및 외부 연동
+            7. 제3자 제공 및 외부 서비스 연동
           </h2>
           <p className="mb-4">
-            앱은 아래 외부 서비스·SDK와 연동될 수 있으며, 각 서비스의
-            개인정보처리방침이 별도로 적용됩니다.
+            앱은 아래 외부 서비스와 연동될 수 있으며, 각 서비스의
+            개인정보처리방침이 별도로 적용될 수 있습니다.
           </p>
-          <div className="space-y-4">
-            <div className="rounded-xl border border-border bg-surface p-4">
-              <h3 className="font-semibold text-ink">카카오 로컬 API</h3>
-              <p className="mt-2 text-sm">
-                식당 검색 및 좌표 기반 조회를 위해 검색어·좌표 등이 카카오
-                서버로 전송될 수 있습니다.
+          <ul className="space-y-4">
+            <li>
+              <strong className="text-ink">카카오 로컬 API</strong>
+              <p className="mt-1">
+                근처 맛집 검색 기능 제공을 위해 검색어 및 위치 정보(좌표)가
+                카카오 서버로 전송될 수 있습니다.
               </p>
-            </div>
-            <div className="rounded-xl border border-border bg-surface p-4">
-              <h3 className="font-semibold text-ink">Google AdMob</h3>
-              <p className="mt-2 text-sm">
-                광고 게재 및 맞춤형 광고 제공을 위해 광고 식별자, 기기 정보,
+            </li>
+            <li>
+              <strong className="text-ink">Google AdMob</strong>
+              <p className="mt-1">
+                광고 제공 및 광고 성과 측정을 위해 광고 식별자, 기기 정보,
                 이용 기록 등이 Google에 의해 처리될 수 있습니다.
               </p>
-            </div>
-            <div className="rounded-xl border border-border bg-surface p-4">
-              <h3 className="font-semibold text-ink">외부 앱 링크(url_launcher)</h3>
-              <p className="mt-2 text-sm">
-                지도, 전화, 앱 스토어 등 외부 앱·웹으로 이동할 때 해당
-                서비스의 정책이 적용됩니다.
+            </li>
+            <li>
+              <strong className="text-ink">외부 서비스 연결</strong>
+              <p className="mt-1">
+                지도, 전화, 앱 스토어 등 외부 앱 또는 웹페이지로 이동할
+                경우 해당 서비스의 정책이 적용될 수 있습니다.
               </p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </section>
 
         <section id="retention" className="scroll-mt-24">
