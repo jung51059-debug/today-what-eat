@@ -26,7 +26,6 @@ const sections = [
   { id: "children", title: "11. 아동의 개인정보" },
   { id: "changes", title: "12. 방침 변경" },
   { id: "contact", title: "13. 문의처" },
-  { id: "legal", title: "14. 법적 고지" },
 ] as const;
 
 export default function PrivacyPage() {
@@ -361,21 +360,6 @@ export default function PrivacyPage() {
             >
               {CONTACT_EMAIL}
             </a>
-          </p>
-        </section>
-
-        <section
-          id="legal"
-          className="scroll-mt-24 rounded-xl border border-mint/20 bg-mint-light p-5"
-        >
-          <h2 className="mb-3 text-xl font-bold text-ink">14. 법적 고지</h2>
-          <p className="text-sm">
-            본 개인정보처리방침은 서비스 출시 전 작성된 <strong>초안</strong>
-            입니다. 실제 서비스 운영·수익화(광고 포함)·위치정보 이용 등
-            구체적인 처리 방식에 따라 「개인정보 보호법」, 「위치정보의
-            보호 및 이용 등에 관한 법률」 등 관련 법령에 맞게{" "}
-            <strong>반드시 법률 전문가의 검토</strong>를 거쳐 최종본을
-            확정해야 합니다. 본 문서는 법적 효력을 대체하지 않습니다.
           </p>
         </section>
       </article>
