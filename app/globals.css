@@ -395,4 +395,30 @@ body {
     transform: translateY(-1px);
     background-color: var(--color-mint-bright);
   }
+
+  /* ── 개인정보처리방침 ── */
+  .privacy-back-link {
+    font-weight: 500;
+    color: var(--color-ink-muted);
+  }
+
+  .privacy-back-link:hover {
+    color: var(--color-mint-hover);
+  }
+
+  .privacy-toc-list {
+    font-size: 0.9375rem;
+    line-height: 1.75;
+  }
+
+  .privacy-article {
+    line-height: 1.85;
+    margin-top: 0.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .privacy-article {
+      margin-top: 1rem;
+    }
+  }
 }

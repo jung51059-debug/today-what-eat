@@ -34,7 +34,7 @@ export default function PrivacyPage() {
       <nav aria-label="페이지 이동" className="mb-6">
         <Link
           href="/"
-          className="inline-flex items-center text-sm font-medium text-mint transition-colors hover:text-mint-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mint"
+          className="privacy-back-link inline-flex items-center text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mint"
         >
           ← 홈으로 돌아가기
         </Link>
@@ -44,7 +44,7 @@ export default function PrivacyPage() {
         <h1 className="text-3xl font-bold text-ink sm:text-4xl">
           개인정보처리방침
         </h1>
-        <p className="mt-4 text-base leading-relaxed text-ink-muted">
+        <p className="mt-4 text-base leading-[1.85] text-ink-muted">
           「{APP_NAME}」(이하 &ldquo;앱&rdquo;)은 이용자의 개인정보를 중요하게
           생각하며, 「개인정보 보호법」 등 관련 법령을 준수합니다. 본
           개인정보처리방침은 앱 이용 과정에서 처리되는 개인정보와 그 이용
@@ -58,12 +58,12 @@ export default function PrivacyPage() {
 
       <nav
         aria-label="목차"
-        className="mb-10 rounded-2xl border border-border bg-surface p-5 sm:p-6"
+        className="mb-12 rounded-2xl border border-border bg-surface p-5 sm:mb-14 sm:p-6"
       >
         <h2 className="text-sm font-semibold uppercase tracking-wide text-ink-muted">
           목차
         </h2>
-        <ol className="mt-3 space-y-2 text-sm">
+        <ol className="privacy-toc-list mt-3 space-y-2.5">
           {sections.map((section) => (
             <li key={section.id}>
               <a
@@ -77,7 +77,7 @@ export default function PrivacyPage() {
         </ol>
       </nav>
 
-      <article className="space-y-10 text-base leading-relaxed text-ink-muted">
+      <article className="privacy-article space-y-14 text-base text-ink-muted sm:space-y-16">
         <section id="intro" className="scroll-mt-24">
           <h2 className="mb-3 text-xl font-bold text-ink">1. 총칙</h2>
           <p>
