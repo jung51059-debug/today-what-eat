@@ -47,7 +47,7 @@ export function ScreenshotSection() {
           </p>
         </div>
 
-        <figure className="showcase-frame mx-auto mt-12 max-w-5xl sm:mt-14">
+        <figure className="showcase-frame mx-auto mt-11 max-w-5xl sm:mt-12">
           <ul
             className="showcase-row"
             aria-label="앱 화면 쇼케이스"
