@@ -75,6 +75,67 @@ body {
     }
   }
 
+  /* ── 앱 미리보기 3분할 쇼케이스 ── */
+  .showcase-frame {
+    border-radius: 1.25rem;
+    background: var(--color-cream);
+    padding: 1.5rem 1rem 1.25rem;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+  }
+
+  @media (min-width: 640px) {
+    .showcase-frame {
+      padding: 2rem 1.5rem 1.5rem;
+      border-radius: 1.5rem;
+    }
+  }
+
+  .showcase-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .showcase-slice {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    transform-origin: bottom center;
+    transition: transform 0.3s ease;
+  }
+
+  .showcase-slice-side {
+    transform: scale(0.92) translateY(0.75rem);
+  }
+
+  .showcase-slice-center {
+    z-index: 1;
+    transform: scale(1) translateY(-0.5rem);
+  }
+
+  @media (min-width: 640px) {
+    .showcase-slice-side {
+      transform: scale(0.92) translateY(1rem);
+    }
+
+    .showcase-slice-center {
+      transform: scale(1) translateY(-0.75rem);
+    }
+  }
+
+  .showcase-slice-viewport {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 341 / 633;
+  }
+
+  .showcase-slice-image {
+    display: block;
+    width: 300%;
+    max-width: none;
+    height: auto;
+  }
+
   .btn-mint-lift {
     transition:
       background-color 0.2s ease,

@@ -1,5 +1,23 @@
 import Image from "next/image";
 
+const SLICES = [
+  {
+    alt: "혼밥, 데이트, 회식 등 상황을 고르는 앱 화면",
+    className: "showcase-slice showcase-slice-side",
+    offset: 0,
+  },
+  {
+    alt: "오늘의 추천 메뉴 목록을 보여주는 앱 화면",
+    className: "showcase-slice showcase-slice-center",
+    offset: 1,
+  },
+  {
+    alt: "근처 맛집 목록과 거리 필터를 보여주는 앱 화면",
+    className: "showcase-slice showcase-slice-side",
+    offset: 2,
+  },
+] as const;
+
 export function ScreenshotSection() {
   return (
     <section
@@ -27,18 +45,29 @@ export function ScreenshotSection() {
           </p>
         </div>
 
-        {/* 업로드한 프로모션 이미지 쇼케이스 */}
-        <figure className="mx-auto mt-14 max-w-5xl sm:mt-16">
-          <div className="screenshot-card-hover overflow-hidden rounded-2xl shadow-[0_8px_32px_rgb(0_0_0/0.06)]">
-            <Image
-              src="/app-showcase.jpg"
-              alt="오늘 뭐 먹지? 앱 주요 화면 — 상황 선택, 메뉴 추천, 근처 맛집"
-              width={1024}
-              height={633}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1024px"
-              className="h-auto w-full"
-              priority
-            />
+        {/* 3분할 쇼케이스 — 가운데 강조 + 좌우 오프셋 */}
+        <figure className="showcase-frame mx-auto mt-14 max-w-5xl sm:mt-16">
+          <div
+            className="showcase-row"
+            role="group"
+            aria-label="오늘 뭐 먹지? 앱 주요 화면 미리보기"
+          >
+            {SLICES.map((slice) => (
+              <div key={slice.offset} className={slice.className}>
+                <div className="showcase-slice-viewport">
+                  <Image
+                    src="/app-showcase.jpg"
+                    alt={slice.alt}
+                    width={1024}
+                    height={633}
+                    sizes="(max-width: 640px) 30vw, 320px"
+                    className="showcase-slice-image"
+                    style={{ marginLeft: `${-slice.offset * 100}%` }}
+                    priority={slice.offset === 1}
+                  />
+                </div>
+              </div>
+            ))}
           </div>
         </figure>
       </div>
