@@ -9,15 +9,30 @@ type StoreButtonsProps = {
   className?: string;
 };
 
+/** Google Play 공식 4색 삼각 로고 — 다운로드 버튼으로 즉시 인식되도록 */
 function GooglePlayIcon() {
   return (
     <svg
       aria-hidden="true"
-      className="h-5 w-5 shrink-0"
+      className="h-6 w-6 shrink-0"
       viewBox="0 0 24 24"
-      fill="currentColor"
     >
-      <path d="M3.6 1.8c-.3.2-.5.6-.5 1v18.4c0 .4.2.8.5 1l10.2-10.2L3.6 1.8zm11.4 9.2-2.5 2.5 2.5 2.5 5.8-3.3c.5-.3.5-1 0-1.3l-5.8-3.4zM12.5 12 3.6 21.8c.3.2.7.3 1.1.1l10.9-6.2-2.1-3.7zm1.1-1.9 2.1-3.7L4.7 1.1c-.4-.2-.8-.1-1.1.1L12.5 12z" />
+      <path
+        d="M3.6 1.8c-.3.2-.5.6-.5 1v18.4c0 .4.2.8.5 1l10.2-10.2L3.6 1.8z"
+        fill="#34A853"
+      />
+      <path
+        d="M12.5 12 3.6 21.8c.3.2.7.3 1.1.1l10.9-6.2-2.1-3.7z"
+        fill="#FBBC04"
+      />
+      <path
+        d="m11.4 9.2-2.5 2.5 2.5 2.5 5.8-3.3c.5-.3.5-1 0-1.3l-5.8-3.4z"
+        fill="#4285F4"
+      />
+      <path
+        d="m1.1-1.9 2.1-3.7L4.7 1.1c-.4-.2-.8-.1-1.1.1L12.5 12z"
+        fill="#EA4335"
+      />
     </svg>
   );
 }
@@ -41,11 +56,11 @@ export function StoreButtons({
 }: StoreButtonsProps) {
   const sizeClasses =
     size === "large"
-      ? "px-6 py-3.5 text-base"
-      : "px-5 py-3 text-sm";
+      ? "min-h-[62px] px-7 text-base"
+      : "min-h-[60px] px-5 text-sm";
 
   const baseButton =
-    "btn-mint-lift inline-flex w-full items-center justify-center gap-2 rounded-full font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mint sm:w-auto";
+    "btn-mint-lift inline-flex w-full items-center justify-center gap-2.5 rounded-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mint sm:w-auto";
 
   return (
     <div
@@ -55,7 +70,7 @@ export function StoreButtons({
         href={ANDROID_STORE_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className={`${baseButton} ${sizeClasses} bg-mint text-white shadow-mint-soft`}
+        className={`${baseButton} ${sizeClasses} bg-mint font-bold text-white shadow-mint-soft`}
         aria-label="Google Play 스토어에서 앱 다운로드"
       >
         <GooglePlayIcon />
@@ -66,7 +81,7 @@ export function StoreButtons({
           href={IOS_STORE_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className={`${baseButton} ${sizeClasses} border-2 border-mint/40 bg-surface text-mint hover:border-mint hover:bg-mint-light`}
+          className={`${baseButton} ${sizeClasses} border-2 border-mint/40 bg-surface font-semibold text-mint hover:border-mint hover:bg-mint-light`}
           aria-label="App Store에서 앱 다운로드"
         >
           <AppStoreIcon />
