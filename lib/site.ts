@@ -12,7 +12,7 @@ export const DESCRIPTION =
   "오늘 뭐 먹지?는 혼밥, 데이트, 회식 등 상황에 맞는 메뉴를 추천하고, 위치 기반으로 근처 맛집을 찾아주는 모바일 앱입니다.";
 
 /** Open Graph 등 절대 URL이 필요할 때 사용 (배포 도메인으로 교체) */
-export const SITE_URL = "https://todaywhateatweb.vercel.app";
+export const SITE_URL = "https://today-what-eat-tau.vercel.app";
 
 /** Google Play 스토어 URL (배포 후 실제 링크로 교체) */
 export const ANDROID_STORE_URL =
