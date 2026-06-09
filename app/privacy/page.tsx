@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { PrivacyScrollToTop } from "@/components/privacy-scroll-to-top";
 import { APP_NAME, CONTACT_EMAIL, OPERATOR_ADDRESS, OPERATOR_NAME, OPERATOR_REPRESENTATIVE } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -31,6 +32,7 @@ const sections = [
 export default function PrivacyPage() {
   return (
     <main className="privacy-page mx-auto max-w-[832px] px-4 py-10 sm:px-6 sm:py-14">
+      <PrivacyScrollToTop />
       <nav aria-label="페이지 이동" className="mb-6">
         <Link
           href="/"

@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { FeaturesFooterLink } from "@/components/features-footer-link";
+import { PrivacyFooterLink } from "@/components/privacy-footer-link";
 import { APP_NAME, CONTACT_EMAIL, COPYRIGHT_YEAR } from "@/lib/site";
 
 export function SiteFooter() {
@@ -15,12 +15,7 @@ export function SiteFooter() {
               <FeaturesFooterLink />
             </li>
             <li>
-              <Link
-                href="/privacy"
-                className="text-sm font-medium text-ink-muted transition-colors hover:text-mint focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mint"
-              >
-                개인정보처리방침
-              </Link>
+              <PrivacyFooterLink />
             </li>
             <li>
               <a
