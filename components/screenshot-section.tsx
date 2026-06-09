@@ -45,6 +45,27 @@ export function ScreenshotSection() {
             상황 선택부터 맛집 탐색까지, 직관적인 화면으로 빠르게 결정해
             보세요.
           </p>
+
+          <div className="mt-5 flex flex-wrap items-center justify-center gap-2.5">
+            <span className="rounded-full border border-[#E8D8C8] bg-white px-4 py-2 text-[15px] font-bold leading-none text-[#6B5A4E] shadow-sm">
+              ① 상황 선택
+            </span>
+            <span className="text-[15px] font-bold text-[#B7A79A]" aria-hidden="true">
+              →
+            </span>
+            <span className="rounded-full border border-[#E8D8C8] bg-white px-4 py-2 text-[15px] font-bold leading-none text-[#6B5A4E] shadow-sm">
+              ② 오늘의 메뉴 추천
+            </span>
+            <span className="text-[15px] font-bold text-[#B7A79A]" aria-hidden="true">
+              →
+            </span>
+            <span className="rounded-full border border-[#E8D8C8] bg-white px-4 py-2 text-[15px] font-bold leading-none text-[#6B5A4E] shadow-sm">
+              ③ 근처 맛집 확인
+            </span>
+          </div>
+          <p className="mt-3 text-[13px] font-normal text-[#8A7468]">
+            오늘 뭐 먹을지 고민될 때, 3단계로 빠르게 결정해 보세요.
+          </p>
         </div>
 
         <figure className="showcase-frame mx-auto mt-11 max-w-5xl sm:mt-12">

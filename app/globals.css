@@ -20,7 +20,9 @@
   --color-ink-muted: #5c5752;
   --color-ink-subtle: #8a847c;
   --color-surface: #ffffff;
+  --color-card: #ffffff;
   --color-border: #ebe4dc;
+  --color-border-warm: #e7ded2;
   --font-sans: var(--font-noto-sans-kr), ui-sans-serif, system-ui, sans-serif;
 }
 
@@ -36,6 +38,19 @@ body {
 
   .shadow-mint-soft {
     box-shadow: 0 8px 18px rgba(120, 170, 150, 0.16);
+  }
+
+  @media (min-width: 1024px) {
+    .hero-promo-card {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .hero-promo-card {
+      min-width: 680px;
+      max-width: 900px;
+    }
   }
 
   .cta-card {

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { APP_BADGE, APP_NAME, TAGLINE } from "@/lib/site";
-import { StoreButtons } from "@/components/store-buttons";
+import { AppIcon } from "@/components/app-icon";
+import { APP_BADGE, APP_NAME, PROMO_IMAGE, TAGLINE } from "@/lib/site";
 
 export function HeroSection() {
   return (
@@ -17,17 +17,10 @@ export function HeroSection() {
         className="pointer-events-none absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-mint/5 blur-3xl"
       />
 
-      <div className="relative mx-auto grid max-w-6xl gap-8 px-4 py-8 sm:px-6 sm:py-12 lg:grid-cols-2 lg:items-center lg:gap-12 lg:py-14">
+      <div className="relative mx-auto grid max-w-6xl gap-8 px-4 py-8 sm:px-6 sm:py-12 lg:grid-cols-[2fr_3fr] lg:items-center lg:gap-10 lg:py-14">
         <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-          <div className="mb-5 flex h-[88px] w-[88px] items-center justify-center overflow-hidden rounded-2xl shadow-sm shadow-mint/5 sm:h-[92px] sm:w-[92px]">
-            <Image
-              src="/app-icon.png"
-              alt={`${APP_NAME} 앱 아이콘`}
-              width={92}
-              height={92}
-              className="h-full w-full object-cover"
-              priority
-            />
+          <div className="mb-6 flex justify-center lg:justify-start">
+            <AppIcon size={120} className="rounded-[22%] shadow-md" priority />
           </div>
 
           <p className="mb-3 text-sm font-semibold text-mint">
@@ -44,23 +37,18 @@ export function HeroSection() {
           <p className="mt-4 max-w-[420px] whitespace-pre-line text-balance text-[17px] leading-[1.7] text-ink-muted sm:text-[19px]">
             {TAGLINE}
           </p>
-
-          <div className="mt-6 w-full sm:max-w-md lg:max-w-none">
-            <StoreButtons size="large" />
-          </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-md lg:max-w-lg">
-          <div className="overflow-hidden rounded-3xl border border-border bg-surface p-3 shadow-xl shadow-mint/10">
-            <Image
-              src="/promo.png"
-              alt={`${APP_NAME} 앱 주요 화면 미리보기`}
-              width={800}
-              height={600}
-              className="h-auto w-full rounded-2xl"
-              priority
-            />
-          </div>
+        <div className="hero-promo-card w-full overflow-hidden rounded-[2rem] border border-border-warm bg-cream shadow-lg sm:rounded-[2.5rem] lg:max-w-[900px] lg:justify-self-end">
+          <Image
+            src={PROMO_IMAGE}
+            alt={`${APP_NAME} 앱 주요 화면 미리보기`}
+            width={1672}
+            height={941}
+            className="block h-auto w-full"
+            sizes="(max-width: 1024px) 100vw, 860px"
+            priority
+          />
         </div>
       </div>
     </section>
