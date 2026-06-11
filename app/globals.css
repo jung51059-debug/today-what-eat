@@ -156,6 +156,54 @@ body {
     transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 
+  .phone-mockup-frameless {
+    line-height: 0;
+  }
+
+  .phone-mockup-frameless .phone-mockup-screen {
+    position: static;
+    display: block;
+    width: 9.5rem;
+    height: auto;
+    object-fit: contain;
+    object-position: center top;
+    filter: drop-shadow(0 12px 30px rgba(0, 0, 0, 0.12));
+  }
+
+  @media (min-width: 640px) {
+    .phone-mockup-frameless .phone-mockup-screen {
+      width: 11.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .phone-mockup-frameless .phone-mockup-screen {
+      width: 12.5rem;
+    }
+  }
+
+  .showcase-item-center .phone-mockup-frameless .phone-mockup-screen {
+    width: 10.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .showcase-item-center .phone-mockup-frameless .phone-mockup-screen {
+      width: 13rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .showcase-item-center .phone-mockup-frameless .phone-mockup-screen {
+      width: 14rem;
+    }
+  }
+
+  .showcase-item-side .phone-mockup-frameless,
+  .showcase-item-side .phone-mockup-screen-wrap {
+    opacity: 0.94;
+    transition: opacity 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
   .showcase-item-side .phone-mockup-screen {
     opacity: 0.94;
     transition: opacity 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -185,6 +233,8 @@ body {
       transform: scale(0.945) translateY(0.65rem);
     }
 
+    .showcase-item-side:hover .phone-mockup-frameless,
+    .showcase-item-side:hover .phone-mockup-screen-wrap,
     .showcase-item-side:hover .phone-mockup-screen {
       opacity: 1;
     }
@@ -393,10 +443,9 @@ body {
   .phone-mockup-caption {
     margin-top: 0.5rem;
     font-size: 0.8125rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.02em;
-    opacity: 0.65;
-    color: var(--color-ink-muted);
+    color: #7a6b5d;
   }
 
   .btn-mint-lift {

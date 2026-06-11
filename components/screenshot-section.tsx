@@ -5,18 +5,24 @@ const SCREENSHOTS = [
     label: "상황 선택",
     src: "/screenshot-1.png",
     alt: "혼밥, 데이트, 회식 등 상황을 고르는 앱 화면",
+    width: 769,
+    height: 1694,
     position: "side" as const,
   },
   {
     label: "메뉴 추천",
     src: "/screenshot-2.png",
     alt: "오늘의 추천 메뉴 목록을 보여주는 앱 화면",
+    width: 797,
+    height: 1674,
     position: "center" as const,
   },
   {
     label: "근처 맛집",
     src: "/screenshot-3.png",
     alt: "근처 맛집 목록과 거리 필터를 보여주는 앱 화면",
+    width: 813,
+    height: 1708,
     position: "side" as const,
   },
 ] as const;
@@ -42,8 +48,7 @@ export function ScreenshotSection() {
             앱 미리보기
           </h2>
           <p className="mt-3 text-[17px] leading-relaxed text-ink-muted sm:text-[19px]">
-            상황 선택부터 맛집 탐색까지, 직관적인 화면으로 빠르게 결정해
-            보세요.
+            오늘 뭐 먹을지 고민될 때, 3단계로 빠르게 결정해 보세요.
           </p>
 
           <div className="mt-5 flex flex-wrap items-center justify-center gap-2.5">
@@ -63,8 +68,8 @@ export function ScreenshotSection() {
               ③ 근처 맛집 확인
             </span>
           </div>
-          <p className="mt-3 text-[13px] font-normal text-[#8A7468]">
-            오늘 뭐 먹을지 고민될 때, 3단계로 빠르게 결정해 보세요.
+          <p className="mt-4 text-[15px] font-semibold leading-relaxed text-[#7A6B5D] sm:text-[16px]">
+            상황 선택 → 메뉴 추천 → 근처 맛집 찾기
           </p>
         </div>
 
@@ -86,6 +91,8 @@ export function ScreenshotSection() {
                   src={shot.src}
                   alt={shot.alt}
                   label={shot.label}
+                  width={shot.width}
+                  height={shot.height}
                   priority={index === 1}
                 />
               </li>

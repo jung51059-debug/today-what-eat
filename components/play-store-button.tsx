@@ -108,14 +108,15 @@ export function PlayStoreButton({
     );
   }
 
-  const badgeHeightClass = size === "large" ? "h-[60px]" : "h-[50px]";
+  const badgeSizeClass =
+    size === "large" ? "h-auto w-[170px]" : "h-[50px] w-auto";
 
   if (comingSoon) {
     return (
       <a
         href="/#download"
         onClick={handleComingSoonClick}
-        className={`inline-block w-fit transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mint ${badgeHeightClass} ${className}`}
+        className={`inline-block w-fit transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mint ${className}`}
         aria-label="다운로드 섹션으로 이동"
       >
         <Image
@@ -123,7 +124,7 @@ export function PlayStoreButton({
           alt="Google Play에서 다운로드"
           width={GOOGLE_PLAY_BADGE_WIDTH}
           height={GOOGLE_PLAY_BADGE_HEIGHT}
-          className={`${badgeHeightClass} w-auto`}
+          className={badgeSizeClass}
           priority={size === "large"}
         />
       </a>
@@ -135,7 +136,7 @@ export function PlayStoreButton({
       href={PLAY_STORE_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-block w-fit transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mint ${badgeHeightClass} ${className}`}
+      className={`inline-block w-fit transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mint ${className}`}
       aria-label="Google Play 스토어에서 앱 다운로드"
     >
       <Image
@@ -143,7 +144,7 @@ export function PlayStoreButton({
         alt="Google Play에서 다운로드"
         width={GOOGLE_PLAY_BADGE_WIDTH}
         height={GOOGLE_PLAY_BADGE_HEIGHT}
-        className={`${badgeHeightClass} w-auto`}
+        className={badgeSizeClass}
         priority={size === "large"}
       />
     </a>

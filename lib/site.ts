@@ -32,9 +32,9 @@ export const HEADER_DOWNLOAD_LABEL = "다운로드";
 
 /** CTA 하이라이트 칩 문구 (✓는 컴포넌트에서 붙임) */
 export const CTA_HIGHLIGHTS = [
-  "회원가입 없음",
-  "근처 맛집 추천",
-  "즐겨찾기 저장",
+  "회원가입 없이 바로 사용",
+  "근처 맛집 자동 추천",
+  "즐겨찾기로 다시 보기",
 ] as const;
 
 /** @deprecated PLAY_STORE_URL 사용 */
