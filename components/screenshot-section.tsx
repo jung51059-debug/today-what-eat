@@ -31,7 +31,7 @@ export function ScreenshotSection() {
   return (
     <section
       aria-labelledby="screenshots-heading"
-      className="relative overflow-hidden bg-cream pb-16 pt-12 sm:pb-20 sm:pt-14"
+      className="relative overflow-hidden bg-cream pb-10 pt-12 sm:pb-16 sm:pt-14"
     >
       <div aria-hidden="true" className="pointer-events-none absolute inset-0">
         <div className="absolute -left-24 top-1/4 h-80 w-80 rounded-full bg-mint/3 blur-[88px]" />

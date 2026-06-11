@@ -60,21 +60,21 @@ body {
 
   .card-feature-hover {
     border: 1px solid rgb(235 228 220 / 0.45);
-    box-shadow: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: all 0.25s ease;
   }
 
   .card-feature-hover:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
     border-color: #a7c9b7;
-    box-shadow: 0 10px 24px rgb(0 0 0 / 0.06);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
   }
 
   @media (hover: none) {
     .card-feature-hover:hover {
       transform: none;
       border-color: rgb(235 228 220 / 0.45);
-      box-shadow: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
   }
 

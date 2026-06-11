@@ -29,12 +29,12 @@ export function HeroSection() {
 
           <h1
             id="hero-heading"
-            className="text-balance text-3xl font-bold leading-tight text-ink sm:text-4xl lg:text-5xl"
+            className="text-balance text-[34px] font-bold leading-tight text-ink sm:text-[40px] lg:text-[54px]"
           >
             {APP_NAME}
           </h1>
 
-          <p className="mt-4 max-w-[420px] whitespace-pre-line text-balance text-[17px] leading-[1.7] text-ink-muted sm:text-[19px]">
+          <p className="mt-4 max-w-[420px] whitespace-pre-line text-balance text-[19px] leading-[1.7] text-ink-muted sm:text-[21px]">
             {TAGLINE}
           </p>
         </div>

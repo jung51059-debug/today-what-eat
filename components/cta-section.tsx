@@ -6,7 +6,7 @@ export function CtaSection() {
     <section
       id="download"
       aria-labelledby="cta-heading"
-      className="scroll-mt-24 py-16 sm:py-20"
+      className="scroll-mt-24 pb-16 pt-12 sm:pb-20 sm:pt-16"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="cta-card overflow-hidden rounded-3xl border border-mint/15 px-6 py-8 text-center sm:px-12 sm:py-11">
@@ -25,7 +25,7 @@ export function CtaSection() {
             {CTA_HIGHLIGHTS.map((item) => (
               <span
                 key={item}
-                className="rounded-full border border-[#DDE8DA] bg-[#F7FCF8] px-4 py-2 text-[15px] font-bold leading-none text-[#5E8F73]"
+                className="rounded-full border border-[#DDE8DA] bg-[#F7FCF8] px-4 py-2 text-sm font-bold text-[#5E8F73]"
               >
                 ✓ {item}
               </span>
